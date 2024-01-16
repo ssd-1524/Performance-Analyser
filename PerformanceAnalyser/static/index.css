@@ -1,0 +1,9 @@
+header h1 {
+    text-align: center;
+}
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-direction: row;
+}

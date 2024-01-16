@@ -1,0 +1,28 @@
+{% extends 'header.html' %}
+{% block title %}
+    <title>Performance Analyzer</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'info.css' %}">
+{% endblock title %}
+{% block main %}
+    <main>
+        <h2 class="name">{{ emp.Name }}</h2>
+        <div class="info">
+            <table>
+            {{ obj }}
+                    <tr>
+                        <th>Position</th>
+                        <th>Department</th>
+                        <th>Pay</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>{{ emp.Position }}</td>
+                        <td>{{ emp.Department }}</td>
+                        <td>{{ emp.Pay }}</td>
+                        <td>{{ emp.Grade }}</td>
+                    </tr>
+            </table>
+        </div>
+    </main>    
+{% endblock main %}

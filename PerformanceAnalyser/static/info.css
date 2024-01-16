@@ -1,0 +1,58 @@
+* {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    height: 100px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    padding-top: 20px;
+}
+
+header ul {
+    margin-top: 20px;
+}
+
+.name {
+    font-family: Arial, sans-serif;
+    margin-top: 70px;
+}
+
+.info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 600px;
+}
+
+tr {
+    height: 30px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+th {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+tr:nth-child(odd) {
+    background-color: aliceblue;
+}

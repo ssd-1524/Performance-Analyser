@@ -1,0 +1,28 @@
+{% extends 'header.html' %}
+
+{% block title %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'all.css' %}">
+{% endblock title %}
+
+{%  block main %}
+    <h2 class="list">Employee List:</h2>
+    <div class="all">
+        <table>
+            <tr>
+                <th>Employee Name</th>
+                <th>Department</th>
+                <th>Position</th>
+                <th>Grade</th>
+            </tr>
+            {% for i in arr %}
+                <tr>
+                    <td>{{ i.Name }}</td>
+                    <td>{{ i.Department }}</td>
+                    <td>{{ i.Position }}</td>
+                    <td>{{ i.Grade }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock main %}

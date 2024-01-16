@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>Performance Analyser</title>
+    {% endblock title %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Performance Analyser</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Profile</li>
+                <li>Tasks</li>
+                <li>Feedback</li>
+            </ul>
+        </nav>
+    </header>
+    {% block main %}
+    {% endblock main %}
+</body>
+</html>
